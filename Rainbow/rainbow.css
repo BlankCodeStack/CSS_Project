@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dongle', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+.wavy
+{
+    position: relative;
+    
+}
+.wavy a {
+    -webkit-box-reflect: below -12px liner-gradient(transparent, rgba(0,0,0,0.2));
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%, rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 300vw 300vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 10s linear infinite forwards;
+}
+@keyframes slide {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 500vw;
+    }
+}
+.wavy span
+{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 6em;
+    text-transform: uppercase;
+    animation: animate 2.5s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));  
+   
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    25%
+    {
+        transform: translateY(-30px);
+    }
+    50%,100%
+    {
+        transform: translateY(0px);
+    }
+    
+}
