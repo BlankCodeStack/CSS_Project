@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+#instructions {
+	position: absolute;
+	color: #fff;
+	bottom: 0;
+	padding-bottom: 6px;
+	font-family: 'Black Han Sans', sans-serif;
+	width: 100%;
+	text-align: center;
+	pointer-events: none;
+}
